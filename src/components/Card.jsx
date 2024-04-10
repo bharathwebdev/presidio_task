@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import like from '../assets/behance_assets/www_behance_net-23.svg'
 import eye from '../assets/behance_assets/www_behance_net-24.svg'
 import uiux from '../assets/behance_assets/ui-ux.png'
 function Card({name,title,img,icon,likes,views,multipleOwner}) {
+
   return (
     <div className=''>
 
@@ -20,7 +21,7 @@ function Card({name,title,img,icon,likes,views,multipleOwner}) {
     </div>
     <div className='flex items-center gap-2 font-[700] text-[12px] cursor-pointer'>
         <div className='flex gap-1'> 
-             <img src={like}/>
+             <img src={like} />
              <p>{likes}</p>
         </div>
 

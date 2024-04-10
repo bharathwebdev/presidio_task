@@ -9,7 +9,7 @@ function HashTag({ imageUrl, name, action }) {
         <div className=''>
           <div className={`w-16 h-16 relative rounded-full border-2  border-blue-600  p-[2px]  bg-white `}>
             <img className='rounded-full  relative' src={imageUrl} />
-            <div className='bg-gradient-to-t from-black w-[52px] h-[52px] to-black  opacity-50 absolute w-full h-full top-1 left-1 rounded-full'></div>
+            <div className='bg-gradient-to-t from-black  to-black  opacity-50 absolute w-full h-full top-0 left-0 rounded-full'></div>
             <img src={action ? play : hashtag} className='w-[20px] z-[100] absolute top-5 left-5' />
           </div>
           <div className='z-[-1] w-[180px] h-[60px] rounded flex absolute top-2 left-0'>
