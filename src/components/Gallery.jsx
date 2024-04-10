@@ -5,8 +5,8 @@ import filter from "../assets/behance_assets/www_behance_net-20.svg"
 import ImageList from './ImageList'
 function Gallery() {
   return (
-    <div className='mx-[24px] mt-[40px] '>
-     
+    <div className='mx-[24px] mt-[40px] h-[55px]'>
+   
 <div className='flex justify-between items-center border-b-2 p-3'>
   <div className='flex gap-7 mb-4 h-full'>
 

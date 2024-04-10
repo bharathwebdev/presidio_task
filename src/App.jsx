@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 
 import Progress from './components/Progress'
 import Gallery from './components/Gallery'
+import FooterComponent from './components/Footer'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Nav/>
     <Progress/>
   <Gallery/>
+  <FooterComponent/>
     </>
   )
 }
