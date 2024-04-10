@@ -1,22 +1,27 @@
 import React, { useState } from 'react'
-import plus from '../assets/behance_assets/www_behance_net-26.svg'
+import plus from '../assets/behance_assets/plus4.png'
 import Status from './Status'
 import data from './data/data'
 import HashTag from './HashTag';
+
 function Progress() {
-    const [statusData,setdata] = useState(data);
+    const [statusData,setStatusData] = useState(data);
     
   return (
-    <div className='m-[24px]  w-[100%]'>
+    <div className='m-[24px] z-[1000]'>
         <div className='text-[20px] font-[600]  tracking-[1px]'>
         Today's Work in Progress
         </div>
 
-<div className='mt-9 flex gap-10 items-center overflow-scroll no-scrollbar'>
+<div className='w-full overflow-scroll no-scrollbar min-w-[100px] '>
+<div className='mt-9 flex gap-10 items-center  '>
 
-    <div className='w-[56px]'>
-        <img src={plus} className='w-[56px]'/>
-        <p className='text-[11px] mt-1 text-[#696969]'>Add Yours</p>
+    <div className='w-[56px] cursor-pointer'>
+      <div className='bg-[#0057FF] p-4 rounded-full'>
+      <img src={plus} className='w-[56px]'/>
+      </div>
+        
+        <p className='text-[11px] mt-1 text-[#696969] w-[56px]'>Add Yours</p>
     </div>
 
 
@@ -34,14 +39,25 @@ statusData.map(data=>{
     })
 }
 
+
 <HashTag
 imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
 name={"videos"}
+action="video"
 />
   
-{/* <HashTag
+<HashTag
 imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
+name={"#motion"}
+/>
+<HashTag
+imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
+name={"#photography"}
+/>
+
+<HashTag
+imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
+name={"#illustration"}
 />
 <HashTag
 imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
@@ -49,32 +65,10 @@ name={"videos"}
 />
 <HashTag
 imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
-/> */}
-{/* <HashTag
-imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
+name={"#graphicdesign"}
 />
-<HashTag
-imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
-/>
-<HashTag
-imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
-/>
-<HashTag
-imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
-/>
-<HashTag
-imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
-/>
-<HashTag
-imageUrl={"https://mir-s3-cdn-cf.behance.net/user/100/563ba6120301377.603eaf0ed9cd0.jpg"}
-name={"videos"}
-/> */}
+
+</div>
 </div>
     </div>
   )

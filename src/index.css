@@ -1,16 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-*{
-    font-family: 'CustomFont';
-    
-} */
-/* *{
-    background:linear-gradient(45deg, #0088fd ,0%, #003bff ,50%, #001faa ,100%);
-} */
-
-
 
 @layer utilities {
       /* Hide scrollbar for Chrome, Safari and Opera */

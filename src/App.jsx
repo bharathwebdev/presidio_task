@@ -17,6 +17,8 @@ function App() {
     <Progress/>
   <Gallery/>
   <FooterComponent/>
+
+
     </>
   )
 }
