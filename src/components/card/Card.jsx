@@ -1,9 +1,22 @@
-import React, { useState } from 'react'
-import like from '../assets/behance_assets/www_behance_net-23.svg'
-import eye from '../assets/behance_assets/www_behance_net-24.svg'
-import uiux from '../assets/behance_assets/ui-ux.png'
+import React, { useEffect, useState } from 'react'
+import like from '../../assets/behance_assets/www_behance_net-23.svg'
+import eye from '../../assets/behance_assets/www_behance_net-24.svg'
+import uiux from '../../assets/behance_assets/ui-ux.png'
+import likeblue from "../../assets/behance_assets/like-blue.svg"
 function Card({name,title,img,icon,likes,views,multipleOwner}) {
+const [liked,setliked] = useState(false)
+const [likesCount,setLikesCount] = useState(likes)
+const handleLike = ()=>{
+  setliked(pre=>!pre)
+}
+useEffect(()=>{
+  if(liked){
+    setLikesCount(pre=>pre+1);
+  }else{ 
+     setLikesCount(pre=>pre-1);
 
+  }
+},[liked])
   return (
     <div className=''>
 
@@ -20,9 +33,9 @@ function Card({name,title,img,icon,likes,views,multipleOwner}) {
 <p className='font-[600] text-[12px] hover:underline'>{multipleOwner ? "Multiple Owners ":name}</p>
     </div>
     <div className='flex items-center gap-2 font-[700] text-[12px] cursor-pointer'>
-        <div className='flex gap-1'> 
-             <img src={like} />
-             <p>{likes}</p>
+        <div className='flex gap-1 transition-all duration-500'> 
+             <img src={!liked ? like : likeblue } onClick={handleLike}/>
+             <p>{likesCount}</p>
         </div>
 
         <div className='flex gap-1 font-[700] text-[12px] cursor-pointer'> 
