@@ -15,23 +15,23 @@ function FooterComponent() {
         <div className='text-[0.7rem] text-[#696969] font-[500] p-[0.2rem]'>
             Try Behance Pro
         </div>
-        <div className='w-[1px] h-[20px] bg-gray-200 '></div>
-        <div className='text-[0.7rem] text-[#696969] font-[500] p-[0.2rem]'>
+        <div className='w-[1px] h-[20px] bg-gray-200  '></div>
+        <div className='text-[0.7rem] text-[#696969]  p-[0.2rem] hover:text-[#0057FF] font-[700]'>
             <a href="https://www.adobe.com/legal/terms.html">TOU</a>
         </div >
-        <div className='text-[0.7rem] text-[#696969] font-[500] p-[0.2rem]'>
+        <div className='text-[0.7rem] text-[#696969]  hover:text-[#0057FF] font-[700] p-[0.2rem]'>
             <a href='https://www.adobe.com/privacy.html'>Privacy</a>
         </div>
-        <div className='text-[0.7rem] text-[#696969] font-[500] p-[0.2rem]'>
+        <div className='text-[0.7rem] text-[#696969]  hover:text-[#0057FF] font-[700] p-[0.2rem]'>
             <a href='https://www.behance.net/misc/community'>Community</a>
         </div>
-        <div className='text-[0.7rem] text-[#696969] font-[500] p-[0.2rem]'>
+        <div className='text-[0.7rem] text-[#696969]  hover:text-[#0057FF] font-[700] p-[0.2rem]'>
         <a href='https://help.behance.net/hc/en-us'>Help</a>
         </div>
-        <div className='text-[0.7rem] text-[#696969] font-[500] p-[0.2rem]'>
+        <div className='text-[0.7rem] text-[#696969]  hover:text-[#0057FF] font-[700] p-[0.2rem]'>
         Cookie preferences
         </div>
-        <div className='text-[0.7rem] text-[#696969] font-[500] p-[0.2rem]'>
+        <div className='text-[0.7rem] text-[#696969]  hover:text-[#0057FF] font-[700] p-[0.2rem]'>
             <a href='https://www.adobe.com/privacy/us-rights.html'>Do not sell or share my personal information</a>
         </div>
         </div>

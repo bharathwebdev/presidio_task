@@ -4,7 +4,7 @@ import hashtag from "../assets/behance_assets/www_behance_net-18.svg";
 
 function HashTag({ imageUrl, name, action }) {
   return (
-    <div className='flex items-center mr-[7rem] cursor-pointer '>
+    <div className='flex items-center mr-[7rem] z-[10] cursor-pointer '>
       <div className='relative'>
         <div className=''>
           <div className={`w-16 h-16 relative rounded-full border-2  border-blue-600  p-[2px]  bg-white `}>
