@@ -1,0 +1,6 @@
+/* src/assets/fonts/fonts.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./Acumin-RPro.otf') format('opentype');
+  }
+  
